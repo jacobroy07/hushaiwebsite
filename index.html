@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hushai Consultants LLP - Corporate Compliance Excellence</title>
+    <meta name="description" content="Navigate complex regulatory landscapes with confidence. Expert corporate compliance solutions for businesses of all sizes.">
+    <meta name="keywords" content="corporate compliance, SEBI compliance, FDI, FEMA, company incorporation, XBRL services, private equity">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hushai Consultants LLP - Corporate Compliance Excellence">
+    <meta property="og:description" content="Expert corporate compliance solutions for businesses of all sizes">
+    <meta property="og:type" content="website">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-blue-100 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <i data-lucide="shield" class="h-8 w-8 text-blue-600"></i>
+                    <span class="text-xl font-bold text-blue-900">Hushai Consultants LLP</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <button onclick="scrollToSection('hero')" class="text-blue-700 hover:text-blue-600 transition-all duration-300 font-medium hover:scale-105">
+                        Home
+                    </button>
+                    <a href="services.html" class="text-blue-700 hover:text-blue-600 transition-all duration-300 font-medium hover:scale-105">
+                        Services
+                    </a>
+                    <button onclick="scrollToSection('about')" class="text-blue-700 hover:text-blue-600 transition-all duration-300 font-medium hover:scale-105">
+                        About
+                    </button>
+                    <a href="blog.html" class="text-blue-700 hover:text-blue-600 transition-all duration-300 font-medium hover:scale-105">
+                        Blog
+                    </a>
+                    <button onclick="scrollToSection('contact')" class="text-blue-700 hover:text-blue-600 transition-all duration-300 font-medium hover:scale-105">
+                        Contact
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden p-2 rounded-lg text-blue-700 hover:bg-blue-50 transition-all duration-300">
+                    <i data-lucide="menu" class="h-6 w-6"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div id="mobileMenu" class="md:hidden transition-all duration-500 ease-in-out overflow-hidden max-h-0 opacity-0">
+                <div class="py-4 space-y-2 border-t border-blue-100 mt-4">
+                    <button onclick="scrollToSection('hero'); closeMobileMenu()" class="block w-full text-left px-4 py-3 text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium">
+                        Home
+                    </button>
+                    <a href="services.html" onclick="closeMobileMenu()" class="block w-full text-left px-4 py-3 text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium">
+                        Services
+                    </a>
+                    <button onclick="scrollToSection('about'); closeMobileMenu()" class="block w-full text-left px-4 py-3 text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium">
+                        About
+                    </button>
+                    <a href="blog.html" onclick="closeMobileMenu()" class="block w-full text-left px-4 py-3 text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium">
+                        Blog
+                    </a>
+                    <button onclick="scrollToSection('contact'); closeMobileMenu()" class="block w-full text-left px-4 py-3 text-blue-700 hover:bg-blue-50 rounded-lg transition-all duration-300 font-medium">
+                        Contact
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-16 min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out">
+                    <h1 class="text-4xl md:text-6xl font-bold text-blue-900 leading-tight mb-6">
+                        Your Trusted
+                        <span class="text-blue-600 block">Business Advisory</span>
+                        <span class="text-blue-800">Partner in India</span>
+                    </h1>
+                    <p class="text-xl text-blue-700 mb-8 leading-relaxed">
+                        We help companies realize their business goals in India through our in-depth knowledge of the Indian
+                        market, expertise in dynamic legal and regulatory environment, and impeccable administrative skills.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="services.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105 transform">
+                            <span>Our Services</span>
+                            <i data-lucide="arrow-right" class="h-5 w-5 transition-transform duration-300"></i>
+                        </a>
+                        <button onclick="openWhatsApp()" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-all duration-500 hover:scale-105 transform">
+                            <i data-lucide="message-circle" class="h-5 w-5"></i>
+                            <span>Get Started</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="animate-on-scroll opacity-0 translate-x-12 transition-all duration-1500 ease-out delay-500">
+                    <div class="relative">
+                        <!-- Stats Cards -->
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="bg-white p-6 rounded-2xl shadow-xl border border-blue-100 hover:shadow-2xl transition-all duration-700 hover:scale-105 transform">
+                                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 transition-all duration-500 hover:scale-110">
+                                    <i data-lucide="award" class="h-8 w-8 text-blue-600"></i>
+                                </div>
+                                <h3 class="text-3xl font-bold text-blue-900 mb-2">15+</h3>
+                                <p class="text-blue-700 font-medium">Years of Experience</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl shadow-xl border border-blue-100 hover:shadow-2xl transition-all duration-700 hover:scale-105 transform">
+                                <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 transition-all duration-500 hover:scale-110">
+                                    <i data-lucide="users" class="h-8 w-8 text-green-600"></i>
+                                </div>
+                                <h3 class="text-3xl font-bold text-blue-900 mb-2">200+</h3>
+                                <p class="text-blue-700 font-medium">Happy Clients</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl shadow-xl border border-blue-100 hover:shadow-2xl transition-all duration-700 hover:scale-105 transform">
+                                <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 transition-all duration-500 hover:scale-110">
+                                    <i data-lucide="star" class="h-8 w-8 text-yellow-600"></i>
+                                </div>
+                                <h3 class="text-3xl font-bold text-blue-900 mb-2">100+</h3>
+                                <p class="text-blue-700 font-medium">Client Reviews</p>
+                            </div>
+                            <div class="bg-white p-6 rounded-2xl shadow-xl border border-blue-100 hover:shadow-2xl transition-all duration-700 hover:scale-105 transform">
+                                <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4 transition-all duration-500 hover:scale-110">
+                                    <i data-lucide="target" class="h-8 w-8 text-purple-600"></i>
+                                </div>
+                                <h3 class="text-3xl font-bold text-blue-900 mb-2">100%</h3>
+                                <p class="text-blue-700 font-medium">Compliance Rate</p>
+                            </div>
+                        </div>
+                        <!-- Floating Elements -->
+                        <div class="absolute -top-4 -right-4 bg-blue-600 text-white p-3 rounded-full shadow-lg animate-pulse">
+                            <i data-lucide="globe" class="h-6 w-6"></i>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 bg-green-600 text-white p-3 rounded-full shadow-lg animate-pulse">
+                            <i data-lucide="trending-up" class="h-6 w-6"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section id="services" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Our Advisory Services</h2>
+                <p class="text-xl text-blue-700 max-w-3xl mx-auto">
+                    Comprehensive business advisory solutions tailored for Indian market expansion and compliance
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl border border-blue-200 hover:border-blue-400 group hover:scale-105 transform">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-500">
+                        <i data-lucide="shield" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">Formation & Incorporation</h3>
+                    <p class="text-blue-700 leading-relaxed">Complete business formation services including companies, LLPs, trusts, and partnerships</p>
+                </div>
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl border border-blue-200 hover:border-blue-400 group hover:scale-105 transform" style="transition-delay: 200ms">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-500">
+                        <i data-lucide="file-text" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">Corporate Law Compliance</h3>
+                    <p class="text-blue-700 leading-relaxed">Comprehensive secretarial services and corporate law compliance solutions</p>
+                </div>
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl border border-blue-200 hover:border-blue-400 group hover:scale-105 transform" style="transition-delay: 400ms">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-500">
+                        <i data-lucide="users" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">Economic Laws & FDI</h3>
+                    <p class="text-blue-700 leading-relaxed">RBI compliances, FEMA regulations, and foreign investment advisory services</p>
+                </div>
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl border border-blue-200 hover:border-blue-400 group hover:scale-105 transform" style="transition-delay: 600ms">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-500">
+                        <i data-lucide="check-circle" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">SEBI Compliance</h3>
+                    <p class="text-blue-700 leading-relaxed">Securities law compliance, takeover regulations, and stock exchange services</p>
+                </div>
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl border border-blue-200 hover:border-blue-400 group hover:scale-105 transform" style="transition-delay: 800ms">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-500">
+                        <i data-lucide="file-text" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">Private Equity Funding</h3>
+                    <p class="text-blue-700 leading-relaxed">Sourcing PE funding and regulatory governance for corporate entities</p>
+                </div>
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl border border-blue-200 hover:border-blue-400 group hover:scale-105 transform" style="transition-delay: 1000ms">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-all duration-500">
+                        <i data-lucide="shield" class="h-8 w-8 text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4">XBRL Services</h3>
+                    <p class="text-blue-700 leading-relaxed">XBRL conversion and filing services for listed companies and large corporations</p>
+                </div>
+            </div>
+
+            <div class="text-center animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out">
+                <a href="services.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold inline-flex items-center space-x-2 transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105 transform">
+                    <span>View All Services</span>
+                    <i data-lucide="arrow-right" class="h-5 w-5 transition-transform duration-300"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-on-scroll opacity-0 translate-x-12 transition-all duration-1500 ease-out">
+                    <div class="bg-gradient-to-br from-blue-600 to-blue-800 p-8 rounded-3xl text-white shadow-xl hover:shadow-2xl transition-all duration-700 hover:scale-105 transform">
+                        <h3 class="text-2xl font-bold mb-6">Why Choose Hushai Consultants?</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3 animate-on-scroll opacity-0 translate-x-8 transition-all duration-1000 ease-out">
+                                <i data-lucide="check-circle" class="h-6 w-6 text-green-400"></i>
+                                <span class="text-lg">15+ years of Indian market expertise</span>
+                            </div>
+                            <div class="flex items-center space-x-3 animate-on-scroll opacity-0 translate-x-8 transition-all duration-1000 ease-out" style="transition-delay: 200ms">
+                                <i data-lucide="check-circle" class="h-6 w-6 text-green-400"></i>
+                                <span class="text-lg">200+ successful business expansions</span>
+                            </div>
+                            <div class="flex items-center space-x-3 animate-on-scroll opacity-0 translate-x-8 transition-all duration-1000 ease-out" style="transition-delay: 400ms">
+                                <i data-lucide="check-circle" class="h-6 w-6 text-green-400"></i>
+                                <span class="text-lg">Deep regulatory environment knowledge</span>
+                            </div>
+                            <div class="flex items-center space-x-3 animate-on-scroll opacity-0 translate-x-8 transition-all duration-1000 ease-out" style="transition-delay: 600ms">
+                                <i data-lucide="check-circle" class="h-6 w-6 text-green-400"></i>
+                                <span class="text-lg">Impeccable administrative skills</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out delay-500">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">
+                        Your Gateway to Indian Business Success
+                    </h2>
+                    <p class="text-lg text-blue-700 mb-6 leading-relaxed">
+                        As a leading advisory firm, we specialize in helping companies realize their business goals in India.
+                        Our in-depth knowledge of the Indian market, combined with our competence in navigating the dynamic
+                        legal and regulatory environment, makes us the ideal partner for your expansion.
+                    </p>
+                    <p class="text-lg text-blue-700 mb-8 leading-relaxed">
+                        We are privileged to continue associating with many companies in their expansion aspects, and our
+                        business services ensure that our clients remain in absolute compliance with the law of the land.
+                    </p>
+                    <button onclick="openWhatsApp()" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center space-x-2 transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105 transform">
+                        <i data-lucide="message-circle" class="h-5 w-5"></i>
+                        <span>Start Your Journey</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">What Our Clients Say</h2>
+                <p class="text-xl text-blue-700 max-w-3xl mx-auto">
+                    Trusted by businesses across industries for exceptional advisory and compliance solutions
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:border-blue-400 hover:scale-105 transform">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-blue-700 mb-6 leading-relaxed">"Hushai Consultants' deep understanding of the Indian market helped us establish our operations seamlessly. Their regulatory expertise saved us months of delays."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-6 w-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-blue-900 font-semibold">Sarah Johnson</h4>
+                            <p class="text-blue-600 text-sm">CEO, TechCorp Industries</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional testimonials would follow the same pattern -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Blog Posts Section -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Latest Market Insights</h2>
+                <p class="text-xl text-blue-700 max-w-3xl mx-auto">
+                    Stay updated with the latest Indian market trends, regulatory changes, and business opportunities
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white rounded-2xl shadow-lg border border-blue-200 hover:border-blue-400 hover:shadow-xl group overflow-hidden hover:scale-105 transform">
+                    <div class="p-8">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <i data-lucide="calendar" class="h-4 w-4 text-blue-600"></i>
+                            <span class="text-blue-600 text-sm">January 15, 2025</span>
+                            <span class="text-blue-300">•</span>
+                            <span class="text-blue-600 text-sm font-medium">Policy Updates</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+                            Government approves E-Vehicle policy to promote India as a manufacturing destination for EVs
+                        </h3>
+                        <p class="text-blue-700 leading-relaxed mb-6">Major policy update: Minimum Investment Rs 4150 Cr required, 3 years timeline for manufacturing setup, and 50% domestic value addition within 5 years.</p>
+                        <a href="blog.html" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center space-x-2 transition-all duration-300 group-hover:translate-x-2">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="h-4 w-4 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Additional blog posts would follow the same pattern -->
+            </div>
+
+            <div class="text-center animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out">
+                <a href="blog.html" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold inline-flex items-center space-x-2 transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105 transform">
+                    <span>View All Insights</span>
+                    <i data-lucide="arrow-right" class="h-5 w-5 transition-transform duration-300"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Google Maps -->
+    <section id="contact" class="py-20 bg-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Ready to Expand in India?</h2>
+                <p class="text-xl text-blue-700 max-w-3xl mx-auto">
+                    Contact us today for expert advisory services and let us help you realize your business goals in India.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 mb-12">
+                <div class="animate-on-scroll opacity-0 translate-x-12 transition-all duration-1500 ease-out">
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4 hover:scale-105 transition-all duration-500 transform">
+                            <div class="bg-blue-100 p-3 rounded-lg">
+                                <i data-lucide="phone" class="h-6 w-6 text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-blue-900 mb-2">Phone</h3>
+                                <p class="text-blue-700">9820113322</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 hover:scale-105 transition-all duration-500 transform">
+                            <div class="bg-green-100 p-3 rounded-lg">
+                                <i data-lucide="message-circle" class="h-6 w-6 text-green-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-blue-900 mb-2">WhatsApp</h3>
+                                <p class="text-blue-700">+91 9820113322</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4 hover:scale-105 transition-all duration-500 transform">
+                            <div class="bg-purple-100 p-3 rounded-lg">
+                                <i data-lucide="map-pin" class="h-6 w-6 text-purple-600"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-semibold text-blue-900 mb-2">Address</h3>
+                                <p class="text-blue-700">
+                                    207, Anjani Complex,<br>
+                                    Periera Hill Road Nr. Western Express Highway,<br>
+                                    Andheri-East Mumbai - 400099
+                                </p>
+                            </div>
+                        </div>
+                        <button onclick="openWhatsApp()" class="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-semibold flex items-center justify-center space-x-2 transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105 transform">
+                            <i data-lucide="message-circle" class="h-5 w-5"></i>
+                            <span>Contact via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out delay-500">
+                    <div class="bg-white p-8 rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl transition-all duration-700">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-6">Send us a message</h3>
+                        <form id="contactForm" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-blue-900 mb-2">Name</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-blue-900 mb-2">Email</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-blue-900 mb-2">Phone</label>
+                                <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-blue-900 mb-2">Message</label>
+                                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-blue-200 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-500 shadow-lg hover:shadow-xl hover:scale-105 transform">
+                                Send Message via WhatsApp
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Google Maps Section -->
+            <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out">
+                <div class="bg-white p-8 rounded-2xl border border-blue-200 shadow-lg hover:shadow-xl transition-all duration-700">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-6 text-center">Visit Our Office</h3>
+                    <div class="aspect-video rounded-lg overflow-hidden border border-blue-200">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.0123456789!2d72.8530116!3d19.1152888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1dccbc5506b%3A0xee5e3519c9dd209c!2sHushai%20Consultants%20LLP!5e0!3m2!1sen!2sin!4v1635959729807!5m2!1sen!2sin"
+                            width="100%"
+                            height="100%"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="rounded-lg">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i data-lucide="shield" class="h-8 w-8 text-blue-400"></i>
+                        <span class="text-xl font-bold">Hushai Consultants LLP</span>
+                    </div>
+                    <p class="text-blue-200">
+                        Your trusted advisory partner for business expansion and compliance in India.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-blue-200">
+                        <li><a href="services.html" class="hover:text-blue-100 transition-all duration-300 hover:translate-x-1 inline-block">Formation & Incorporation</a></li>
+                        <li><a href="services.html" class="hover:text-blue-100 transition-all duration-300 hover:translate-x-1 inline-block">Corporate Law Compliance</a></li>
+                        <li><a href="services.html" class="hover:text-blue-100 transition-all duration-300 hover:translate-x-1 inline-block">SEBI Compliance</a></li>
+                        <li><a href="services.html" class="hover:text-blue-100 transition-all duration-300 hover:translate-x-1 inline-block">XBRL Services</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-blue-200">
+                        <li><button onclick="scrollToSection('about')" class="hover:text-blue-100 transition-all duration-300 hover:translate-x-1 inline-block">About Us</button></li>
+                        <li><a href="blog.html" class="hover:text-blue-100 transition-all duration-300 hover:translate-x-1 inline-block">Blog</a></li>
+                        <li><button onclick="scrollToSection('contact')" class="hover:text-blue-100 transition-all duration-300 hover:translate-x-1 inline-block">Contact</button></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+                    <ul class="space-y-2 text-blue-200">
+                        <li>+91 9820113322</li>
+                        <li>support@hushai.co.in</li>
+                        <li>
+                            207, Anjani Complex,<br>
+                            Periera Hill Road <br> Nr. Western Express Highway,<br>
+                            Andheri-East Mumbai - 400099
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-blue-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-blue-200">© 2025 Hushai Consultants LLP. All rights reserved.</p>
+                <p class="text-blue-200 mt-4 md:mt-0">Your trusted partner for Indian market expansion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <button onclick="openWhatsApp()" class="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-500 z-50 hover:scale-110 transform animate-bounce">
+        <i data-lucide="message-circle" class="h-6 w-6"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
