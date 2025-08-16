@@ -25,11 +25,13 @@
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-blue-100 z-50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center space-x-2">
-                    <!-- Updated to use local logo image -->
-                    <img src="images/hushai-logo.png" alt="Hushai Consultants LLP" class="h-10 w-auto">
-                    <span class="text-xl font-bold text-blue-900">Hushai Consultants LLP</span>
+            <!-- Increased header height from h-16 to h-20 -->
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center space-x-3">
+                    <!-- Increased logo size from h-10 to h-14 -->
+                    <img src="images/hushai-logo.png" alt="Hushai Consultants LLP" class="h-14 w-auto">
+                    <!-- Updated title text to "Hushai Consultants LLP" and increased font size -->
+                    <span class="text-2xl font-bold text-blue-900">Hushai Consultants LLP</span>
                 </div>
 
                 <!-- Desktop Navigation -->
@@ -81,7 +83,8 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="pt-16 min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200">
+    <!-- Increased top padding from pt-16 to pt-20 to accommodate larger header -->
+    <section id="hero" class="pt-20 min-h-screen flex items-center bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out">
@@ -274,6 +277,7 @@
                 </p>
             </div>
 
+            <!-- Added 6 testimonials instead of 1 -->
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:border-blue-400 hover:scale-105 transform">
                     <div class="flex items-center mb-4">
@@ -294,7 +298,105 @@
                         </div>
                     </div>
                 </div>
-                <!-- Additional testimonials would follow the same pattern -->
+
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:border-blue-400 hover:scale-105 transform" style="transition-delay: 200ms">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-blue-700 mb-6 leading-relaxed">"Outstanding SEBI compliance support for our IPO process. The team's attention to detail and proactive approach made the entire journey smooth and successful."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-green-600 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-6 w-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-blue-900 font-semibold">Rajesh Patel</h4>
+                            <p class="text-blue-600 text-sm">CFO, Mumbai Dynamics Ltd</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:border-blue-400 hover:scale-105 transform" style="transition-delay: 400ms">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-blue-700 mb-6 leading-relaxed">"Exceptional FDI advisory services. They guided us through complex FEMA regulations and helped secure approvals efficiently. Highly recommended for foreign investors."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-purple-600 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-6 w-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-blue-900 font-semibold">Michael Chen</h4>
+                            <p class="text-blue-600 text-sm">Director, Singapore Ventures</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:border-blue-400 hover:scale-105 transform" style="transition-delay: 600ms">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-blue-700 mb-6 leading-relaxed">"Professional corporate law compliance services. Their team handled our company incorporation and ongoing secretarial services with utmost precision and timeliness."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-orange-600 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-6 w-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-blue-900 font-semibold">Priya Sharma</h4>
+                            <p class="text-blue-600 text-sm">Founder, Delhi Innovations</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:border-blue-400 hover:scale-105 transform" style="transition-delay: 800ms">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-blue-700 mb-6 leading-relaxed">"Excellent XBRL services and financial reporting support. They ensured our compliance with MCA requirements and delivered error-free filings consistently."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-teal-600 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-6 w-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-blue-900 font-semibold">David Wilson</h4>
+                            <p class="text-blue-600 text-sm">Finance Head, Global Manufacturing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white p-8 rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:border-blue-400 hover:scale-105 transform" style="transition-delay: 1000ms">
+                    <div class="flex items-center mb-4">
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                        <i data-lucide="star" class="h-5 w-5 text-yellow-400 fill-current"></i>
+                    </div>
+                    <p class="text-blue-700 mb-6 leading-relaxed">"Remarkable private equity advisory services. They connected us with the right investors and managed the entire funding process professionally from start to finish."</p>
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-red-600 w-12 h-12 rounded-full flex items-center justify-center">
+                            <i data-lucide="user" class="h-6 w-6 text-white"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-blue-900 font-semibold">Anita Gupta</h4>
+                            <p class="text-blue-600 text-sm">CEO, Bangalore Tech Solutions</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -310,6 +412,7 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Added 3 featured blog posts instead of 1 -->
                 <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:border-blue-400 group overflow-hidden hover:scale-105 transform">
                     <div class="p-8">
                         <div class="flex items-center space-x-2 mb-4">
@@ -328,7 +431,44 @@
                         </a>
                     </div>
                 </div>
-                <!-- Additional blog posts would follow the same pattern -->
+
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:border-blue-400 group overflow-hidden hover:scale-105 transform" style="transition-delay: 200ms">
+                    <div class="p-8">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <i data-lucide="calendar" class="h-4 w-4 text-blue-600"></i>
+                            <span class="text-blue-600 text-sm">January 12, 2025</span>
+                            <span class="text-blue-300">•</span>
+                            <span class="text-blue-600 text-sm font-medium">FDI Updates</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+                            FDI Policy Changes: What Businesses Need to Know
+                        </h3>
+                        <p class="text-blue-700 leading-relaxed mb-6">Recent amendments to FDI policy affecting key sectors including e-commerce, defense, and telecommunications. Understanding compliance requirements for foreign investors.</p>
+                        <a href="blog.html" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center space-x-2 transition-all duration-300 group-hover:translate-x-2">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="h-4 w-4 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out bg-white rounded-2xl shadow-lg border border-blue-200 hover:shadow-xl hover:border-blue-400 group overflow-hidden hover:scale-105 transform" style="transition-delay: 400ms">
+                    <div class="p-8">
+                        <div class="flex items-center space-x-2 mb-4">
+                            <i data-lucide="calendar" class="h-4 w-4 text-blue-600"></i>
+                            <span class="text-blue-600 text-sm">January 10, 2025</span>
+                            <span class="text-blue-300">•</span>
+                            <span class="text-blue-600 text-sm font-medium">Corporate Strategy</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-blue-900 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+                            Corporate Restructuring: Best Practices Guide
+                        </h3>
+                        <p class="text-blue-700 leading-relaxed mb-6">Comprehensive guide to corporate restructuring in India, covering mergers, acquisitions, demergers, and regulatory compliance requirements for successful transactions.</p>
+                        <a href="blog.html" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center space-x-2 transition-all duration-300 group-hover:translate-x-2">
+                            <span>Read More</span>
+                            <i data-lucide="arrow-right" class="h-4 w-4 transition-transform duration-300"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
 
             <div class="text-center animate-on-scroll opacity-0 translate-y-12 transition-all duration-1500 ease-out">
@@ -445,9 +585,9 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <!-- Updated to use local logo image -->
-                        <img src="images/hushai-logo.png" alt="Hushai Consultants LLP" class="h-8 w-auto">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <!-- Increased footer logo size from h-8 to h-10 and updated title -->
+                        <img src="images/hushai-logo.png" alt="Hushai Consultants LLP" class="h-10 w-auto">
                         <span class="text-xl font-bold">Hushai Consultants LLP</span>
                     </div>
                     <p class="text-blue-200">
